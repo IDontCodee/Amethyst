@@ -1,0 +1,23 @@
+{
+  "name": "amethyst",
+  "version": "1.0.0",
+  "description": "A proxy site using PROXY_UV_SW and PROXY_CO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "frontend-test": "http-server static"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IDontCodee/Amethyst.git"
+  },
+  "keywords": [
+    "Proxy"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IDontCodee/Amethyst/issues"
+  },
+  "homepage": "https://github.com/IDontCodee/Amethyst#readme"
+}
