@@ -1,0 +1,3 @@
+entrypoint = "README.md"
+run = "./repl.sh"
+onBoot = "chmod u+x repl.sh"
