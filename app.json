@@ -1,6 +1,6 @@
 {
     "name": "Amethyst",
-    "description": "WIP",
+    "description": "A web proxy site using Ultraviolet and Corrosion",
     "repository": "https://github.com/IDontCodee/Amethyst",
     "logo": "https://github.com/IDontCodee/Amethyst/blob/main/deploy/logo.png?raw=true",
     "keywords": ["proxy"]

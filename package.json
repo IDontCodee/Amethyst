@@ -1,7 +1,7 @@
 {
   "name": "amethyst",
   "version": "1.0.0",
-  "description": "A proxy site using PROXY_UV_SW and PROXY_CO",
+  "description": "A web proxy site using Ultraviolet and Corrosion",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
