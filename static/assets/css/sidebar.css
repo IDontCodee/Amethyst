@@ -1,0 +1,20 @@
+.nav ul {
+  width: 200px;
+  background-color: #f1f1f1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.nav li a {
+  color: #000;
+  padding: 8px 16px;
+}
+
+.nav li a:hover {
+  background-color: #555;
+  color: white;
+}

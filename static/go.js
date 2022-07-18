@@ -1,35 +1,31 @@
 const search = document.getElementById('search')
-search.addEventListener('keydown', function(e) {
-    if (e.keyCode === 13) {
-        go(search.value)
-    }
-})
 
-var corrosionproxy = window.location.protocol + "//" + window.location.hostname + "/corrosion/gateway?url="
-    
-var ultravioletproxy = window.location.protocol + "//" + window.location.hostname + __uv$config.prefix
-    
-    if ('serviceWorker' in navigator) {
+document.getElementById("searchform").addEventListener("submit", function(e) {
+    event.preventDefault()
+    go(search.value)
+});
+
+if ('serviceWorker' in navigator) {
         window.navigator.serviceWorker.register('./uv.sw-handler.js', {scope: '/'})
-    }
+}
 
 
-    function pxyopen(url) {
+function pxyopen(url) {
     if (localStorage.getItem("proxy") !== null) {
     window.location.replace(getproxy(url));
     }
-    }
+}
     
-    function getproxy(url) {
+function getproxy(url) {
     var currentproxy = localStorage.getItem("proxy")
     if (currentproxy == "Corrosion") {
-    return corrosionproxy + url
+    return "/corrosion/gateway?url=" + url
     } else if (currentproxy == "Ultraviolet") {
-    return ultravioletproxy + __uv$config.encodeUrl(url)
+    return __uv$config.prefix + __uv$config.encodeUrl(url)
     }
-    }
+}
     
-    function go(url) {
+function go(url) {
     if (url !== '') {
     if (url.includes('.')) {
     pxyopen(url)
@@ -41,4 +37,4 @@ var ultravioletproxy = window.location.protocol + "//" + window.location.hostnam
     } else {
     return false;
     }
-    }
+}
