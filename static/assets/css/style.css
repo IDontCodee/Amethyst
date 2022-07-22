@@ -1,7 +1,7 @@
 @import 'fa/fa.css';
 @font-face {
     font-family: material icons;
-    font-style: normal;
+    font-style: roboto;
     font-weight: 400;
     src: url("./material.woff2") format('woff2');
 }
